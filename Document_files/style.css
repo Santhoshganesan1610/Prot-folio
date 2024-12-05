@@ -445,9 +445,9 @@
 .experience {
   position: relative;
   display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto auto;
-  height: 45rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  height: 17rem;
   overflow: hidden;
 }
 .experience > div {
@@ -457,28 +457,22 @@
   transition: 2s ease;
 }
 
-.experience-1,
-.experience-3 {
+.experience-1 {
   justify-content: flex-end;
 }
 
-.experience-1.section,
-.experience-3.section {
+.experience-1.section{
   transform: translateX(-100%);
 }
-.experience-2.section,
-.experience-4.section {
+.experience-2.section {
   transform: translateX(100%);
 }
-.experience-1.section.active,
-.experience-3.section.active {
+.experience-1.section.active {
   transform: translateX(-5%);
 }
-.experience-2.section.active,
-.experience-4.section.active {
+.experience-2.section.active{
   transform: translateX(5%);
 }
-
 .card {
   position: absolute;
   height: 90%;
